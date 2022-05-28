@@ -45,7 +45,7 @@ temp_min: 28.27
         e.preventDefault()
 
         // url api
-        const API_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityValue},${countryValue}`
+        const API_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityValue},${countryValue}`
 
         const res = await fetch(API_URL)
         const data = await res.json()
